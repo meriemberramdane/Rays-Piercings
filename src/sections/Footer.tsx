@@ -24,7 +24,7 @@ export function Footer() {
             <a href="#accueil" onClick={(e) => { e.preventDefault(); scrollTo("#accueil"); }} className="flex items-center gap-2.5 mb-4">
               <RingMark size={24} />
               <span className="font-display italic text-lg text-white">
-                Rays Piercing
+                Rays Piercings
               </span>
             </a>
             <p className="text-sm text-bone-faint leading-relaxed max-w-xs">
@@ -69,7 +69,7 @@ export function Footer() {
 
         <div className="border-t border-white/[0.06] pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <span className="text-xs text-bone-faint">
-            © {year} Rays Piercing. Tous droits réservés.
+            © {year} Rays Piercings. Tous droits réservés.
           </span>
           <span className="text-xs text-bone-faint">Oran, Algérie</span>
         </div>

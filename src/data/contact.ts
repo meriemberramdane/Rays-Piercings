@@ -2,8 +2,8 @@ export const CONTACT = {
   phone: "+213 559 03 00 84",
   phoneRaw: "213559030084",
   email: "meriemberramdane98@gmail.com",
-  instagram: "@rayspiercing",
-  instagramUrl: "https://instagram.com/rayspiercing",
+  instagram: "@rays_piercings_",
+  instagramUrl: "https://instagram.com/rays_piercings_",
   city: "Oran, Algérie",
 };
 

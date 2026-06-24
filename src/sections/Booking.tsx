@@ -18,7 +18,7 @@ export function Booking() {
   const [sent, setSent] = useState(false);
 
   const buildMessage = () => {
-    return `Bonjour Rays Piercing, je souhaite prendre rendez-vous :
+    return `Bonjour Rays Piercings, je souhaite prendre rendez-vous :
 
 Nom complet : ${name}
 Téléphone : ${phone}

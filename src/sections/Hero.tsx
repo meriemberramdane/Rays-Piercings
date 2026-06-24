@@ -57,7 +57,7 @@ export function Hero() {
             Rays
             <br />
             <span className="font-display-italic text-gradient-silver">
-              Piercing
+              Piercings
             </span>
           </motion.h1>
 

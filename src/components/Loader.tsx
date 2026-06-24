@@ -37,7 +37,7 @@ export function Loader({ show }: LoaderProps) {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              Rays Piercing
+              Rays Piercings
             </motion.span>
           </motion.div>
         </motion.div>

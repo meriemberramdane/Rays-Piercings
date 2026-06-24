@@ -4,7 +4,6 @@ import { Loader } from "./components/Loader";
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./sections/Hero";
 import { Piercings } from "./sections/Piercings";
-import { Gallery } from "./sections/Gallery";
 import { Shop } from "./sections/Shop";
 import { Booking } from "./sections/Booking";
 import { Hygiene } from "./sections/Hygiene";
@@ -30,7 +29,6 @@ function SiteHome() {
         <main>
           <Hero />
           <Piercings />
-          <Gallery />
           <Shop />
           <Booking />
           <Hygiene />

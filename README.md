@@ -1,4 +1,4 @@
-# Rays Piercing — Site web
+# Rays Piercings — Site web
 
 Site vitrine premium pour le studio de piercing **Rays Piercing** (Oran, Algérie). Construit en React + TypeScript + Tailwind CSS + Framer Motion.
 
@@ -20,13 +20,12 @@ npm run preview   # pour vérifier le résultat final
 
 ## Ajouter les vraies photos
 
-Pour l'instant, toutes les images (piercings, galerie, boutique) affichent un **placeholder élégant** avec le nom de l'élément, en attendant les vraies photos. Pour les remplacer :
+Pour l'instant, toutes les images (piercings, boutique) affichent un **placeholder élégant** avec le nom de l'élément, en attendant les vraies photos. Pour les remplacer :
 
 1. Placez vos images dans `public/images/` (ex : `public/images/septum-1.jpg`).
-2. Dans les fichiers de données suivants, ajoutez le champ `image` (ou `src` pour la galerie) à l'élément concerné :
+2. Dans les fichiers de données suivants, ajoutez le champ `image` à l'élément concerné :
    - `src/data/piercings.ts` → champ `image: "/images/septum-1.jpg"`
    - `src/data/products.ts` → champ `image: "/images/anneau-saturne.jpg"`
-   - `src/sections/Gallery.tsx` → tableau `galleryItems`, champ `src: "/images/..."`
 
 Dès qu'un champ `image`/`src` est renseigné, la vraie photo remplace automatiquement le placeholder — aucun autre changement de code n'est nécessaire.
 

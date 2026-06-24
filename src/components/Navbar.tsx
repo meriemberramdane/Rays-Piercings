@@ -50,7 +50,7 @@ export function Navbar() {
         >
           <RingMark size={26} className="group-hover:rotate-180 transition-transform duration-700" />
           <span className="font-display italic text-lg text-white tracking-wide">
-            Rays Piercing
+            Rays Piercings
           </span>
         </a>
 

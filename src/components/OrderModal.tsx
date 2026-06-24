@@ -32,7 +32,7 @@ export function OrderModal({ product, onClose }: OrderModalProps) {
   };
 
   const buildMessage = () => {
-    return `Bonjour Rays Piercing, je souhaite commander :
+    return `Bonjour Rays Piercings, je souhaite commander :
 
 Produit : ${product?.name}
 Prix unitaire : ${product?.price} DA

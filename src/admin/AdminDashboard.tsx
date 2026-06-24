@@ -18,7 +18,7 @@ export function AdminDashboard() {
           <div className="flex items-center gap-2.5">
             <RingMark size={22} />
             <span className="font-display italic text-base text-white">
-              Rays Piercing
+              Rays Piercings
             </span>
             <span className="font-mono text-[10px] uppercase tracking-widest2 text-bone-faint ml-1">
               Admin

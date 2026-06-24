@@ -36,7 +36,7 @@ export function Contact() {
             </motion.a>
 
             <motion.a
-              href={buildWhatsAppLink("Bonjour Rays Piercing, j'aimerais avoir des informations.")}
+              href={buildWhatsAppLink("Bonjour Rays Piercings, j'aimerais avoir des informations.")}
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ y: -4 }}

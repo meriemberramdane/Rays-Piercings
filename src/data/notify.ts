@@ -10,7 +10,7 @@ interface NotifyParams {
 }
 
 /**
- * Envoie une notification e-mail silencieuse à Rays Piercing.
+ * Envoie une notification e-mail silencieuse à Rays Piercings.
  * N'affecte jamais l'expérience du client : aucune erreur n'est montrée
  * à l'écran si l'envoi échoue ou si EmailJS n'est pas encore configuré.
  */

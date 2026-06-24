@@ -28,7 +28,7 @@ export function AdminLogin() {
       >
         <div className="flex flex-col items-center mb-8">
           <RingMark size={36} className="mb-4" />
-          <h1 className="font-display text-2xl text-white">Rays Piercing</h1>
+          <h1 className="font-display text-2xl text-white">Rays Piercings</h1>
           <p className="font-mono text-[10px] uppercase tracking-widest2 text-bone-faint mt-2">
             Espace admin
           </p>
