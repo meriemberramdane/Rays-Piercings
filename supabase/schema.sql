@@ -1,5 +1,5 @@
 -- ============================================================
--- Rays Piercing — Script d'initialisation Supabase
+-- Rays Piercings — Script d'initialisation Supabase
 -- À copier-coller dans Supabase > SQL Editor > New query > Run
 -- ============================================================
 

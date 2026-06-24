@@ -3,10 +3,11 @@ import { motion } from "framer-motion";
 import { CheckCircle2, MessageCircle, Mail } from "lucide-react";
 import { piercings } from "../data/piercings";
 import { Reveal } from "../components/Reveal";
-import { FieldWrap, TextInput, TextArea, SelectInput } from "../components/FormFields";
+import { FieldWrap, TextInput, TextArea } from "../components/FormFields";
 import { buildWhatsAppLink, buildMailtoLink } from "../data/contact";
 import { notifyOwnerByEmail } from "../data/notify";
 import { RingMark } from "../components/RingMark";
+import { PiercingSelect } from "../components/PiercingSelect";
 
 export function Booking() {
   const [name, setName] = useState("");
@@ -114,25 +115,30 @@ Commentaire : ${comment || "—"}`;
                 </div>
 
                 <FieldWrap label="Type de piercing" required>
-                  <SelectInput
+                  <div className="relative">
+                    <PiercingSelect
                     value={piercingType}
-                    onChange={(e) => setPiercingType(e.target.value)}
-                  >
-                    {piercings.map((p) => (
-                      <option key={p.id} value={p.name}>
-                        {p.name}
-                      </option>
-                    ))}
-                  </SelectInput>
+                    options={piercings.map((p) => p.name)}
+                    onChange={(value) => setPiercingType(value)}
+                    />
+                    <svg
+                      className="absolute right-4 top-1/2 -translate-y-1/2 text-bone-faint pointer-events-none"
+                      width="14" height="14" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" strokeWidth="2"
+                    >
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </div>
                 </FieldWrap>
 
-                <div className="grid sm:grid-cols-2 gap-x-5">
+                <div className="flex flex-col sm:grid sm:grid-cols-2 gap-x-5">
                   <FieldWrap label="Date souhaitée" required>
                     <TextInput
                       required
                       type="date"
                       value={date}
                       onChange={(e) => setDate(e.target.value)}
+                      style={{ colorScheme: "dark" }}
                     />
                   </FieldWrap>
                   <FieldWrap label="Heure souhaitée" required>
@@ -141,6 +147,7 @@ Commentaire : ${comment || "—"}`;
                       type="time"
                       value={time}
                       onChange={(e) => setTime(e.target.value)}
+                      style={{ colorScheme: "dark" }}
                     />
                   </FieldWrap>
                 </div>

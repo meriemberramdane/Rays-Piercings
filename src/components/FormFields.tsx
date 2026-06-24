@@ -1,4 +1,4 @@
-import type { InputHTMLAttributes, TextareaHTMLAttributes, SelectHTMLAttributes, ReactNode } from "react";
+import type { InputHTMLAttributes, TextareaHTMLAttributes, ReactNode } from "react";
 
 interface FieldWrapProps {
   label: string;
@@ -28,10 +28,3 @@ export function TextArea(props: TextareaHTMLAttributes<HTMLTextAreaElement>) {
   return <textarea {...props} className={`${baseClasses} resize-none`} rows={3} />;
 }
 
-export function SelectInput(props: SelectHTMLAttributes<HTMLSelectElement>) {
-  return (
-    <select {...props} className={`${baseClasses} appearance-none cursor-pointer`}>
-      {props.children}
-    </select>
-  );
-}

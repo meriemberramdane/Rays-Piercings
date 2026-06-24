@@ -36,14 +36,14 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-ink" />
       </div>
 
-      <div className="relative max-w-7xl w-full mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative max-w-7xl w-full mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
         {/* Texte */}
         <div className="text-center lg:text-left order-2 lg:order-1">
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="font-mono text-xs uppercase tracking-widest2 text-silver mb-6"
+            className="font-mono text-xs uppercase tracking-widest2 text-silver mb-4 lg:mb-6"
           >
             Studio de piercing — Oran
           </motion.p>
@@ -52,7 +52,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="font-display text-6xl sm:text-7xl lg:text-8xl text-white leading-[0.95] mb-6"
+            className="font-display text-5xl sm:text-7xl lg:text-8xl text-white leading-[0.95] mb-4 lg:mb-6"
           >
             Rays
             <br />
@@ -65,7 +65,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.25 }}
-            className="text-lg sm:text-xl text-bone-dim max-w-md mx-auto lg:mx-0 mb-3"
+            className="text-base sm:text-xl text-bone-dim max-w-md mx-auto lg:mx-0 mb-2 lg:mb-3"
           >
             Votre studio de piercing moderne à Oran.
           </motion.p>
@@ -74,7 +74,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.35 }}
-            className="text-base text-bone-faint max-w-md mx-auto lg:mx-0 mb-10"
+            className="text-sm sm:text-base text-bone-faint max-w-md mx-auto lg:mx-0 mb-8 lg:mb-10"
           >
             Des piercings réalisés avec précision, dans le respect des normes
             d'hygiène et avec des bijoux de qualité.
@@ -84,7 +84,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.45 }}
-            className="flex flex-col sm:flex-row items-center lg:items-start gap-4 justify-center lg:justify-start"
+            className="flex flex-col sm:flex-row items-center lg:items-start gap-3 justify-center lg:justify-start"
           >
             <button
               onClick={() => scrollTo("#reserver")}
@@ -118,7 +118,7 @@ export function Hero() {
               transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
               className="animate-float"
             >
-              <RingHero size={380} />
+              <RingHero size={220} />
             </motion.div>
           </motion.div>
         </div>
@@ -129,7 +129,7 @@ export function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2, duration: 0.6 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+        className="absolute bottom-2 md:bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
       >
         <span className="font-mono text-[10px] uppercase tracking-widest2 text-bone-faint">
           Découvrir
@@ -143,3 +143,4 @@ export function Hero() {
     </section>
   );
 }
+
